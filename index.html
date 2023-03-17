@@ -9,6 +9,102 @@
     </head>
 
     <body class="selection:bg-primary selection:text-white">
+        <!-- Header Start -->
+        <header class="bg-transparent fixed top-0 left-0 right-0 w-full flex items-center z-10">
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <!-- Left -->
+                    <div class="px-4">
+                        <!-- 
+                            <a href="#home" class="font-bold text-lg text-primary block py-4">
+                                &nbsp;&lt;/gigihpaga&gt;
+                            </a>
+                        -->
+                        <a href="" class="block py-1">
+                            <img
+                                src="dist/img/logo.svg"
+                                alt="logo"
+                                class="w-7 h-7 md:h-11 md:w-11" />
+                        </a>
+                    </div>
+                    <!-- Right -->
+                    <div class="flex items-center px-4">
+                        <!-- Button Hamburger Start  -->
+                        <!-- on lg:hidden -->
+                        <button
+                            id="hamburger"
+                            name="hamburger"
+                            type="button"
+                            class="block absolute right-4 lg:hidden">
+                            <span class="hamburger-line origin-top-left"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line origin-bottom-left"></span>
+                        </button>
+                        <!-- Button Hamburger End  -->
+                        <!-- Navbar Start -->
+                        <!-- 
+                            on lg :
+                            display         : ....          =>> block 
+                            position        : absolute      =>> static
+                            back-color      : white         =>> transparent
+                            max-width       : 250px         =>> 100%
+                            box-shadow      : shadow-lg     =>> shadow-node
+                            birder-radius   : rounded-lg    =>> rounded-node
+                        -->
+                        <nav
+                            id="nav-menu"
+                            class="hidden absolute bg-white py-3 shadow-lg rounded-lg max-w-[220px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                            <!-- ul wrapper -->
+                            <!-- 
+                            on lg :
+                                display     : block =>> flex 
+                            -->
+                            <ul class="block lg:flex">
+                                <!-- Link Home Start -->
+                                <li class="group">
+                                    <a
+                                        href="#home"
+                                        class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">
+                                        Beranda
+                                    </a>
+                                </li>
+                                <!-- Link Home End -->
+                                <!-- Link About Start -->
+                                <li class="group">
+                                    <a
+                                        href="#about"
+                                        class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">
+                                        Tentang Saya
+                                    </a>
+                                </li>
+                                <!-- Link About End -->
+                                <!-- Link Portofolio Start -->
+                                <li class="group">
+                                    <a
+                                        href="#portofolio"
+                                        class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">
+                                        Portofolio
+                                    </a>
+                                </li>
+                                <!-- Link Portofolio End -->
+                                <!-- Link Clients Start -->
+                                <li class="group">
+                                    <a
+                                        href="#clients"
+                                        class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">
+                                        Clients
+                                    </a>
+                                </li>
+                                <!-- Link Clients End -->
+                            </ul>
+                        </nav>
+                        <!-- Navbar End -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
         <!-- Hero Section Start -->
         <section id="home" class="pt-36">
             <div class="container">
@@ -152,5 +248,8 @@
             </div>
         </section>
         <!-- About Section End -->
+
+        <!-- script -->
+        <script src="dist/js/script.js"></script>
     </body>
 </html>
