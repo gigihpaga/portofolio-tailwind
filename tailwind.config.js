@@ -19,6 +19,10 @@ module.exports = {
             lineClamp: {
                 8: '8',
             },
+            aspectRatio: {
+                '4/5': '4 / 5',
+                '16/9': '16 / 9',
+            },
         },
         variants: {
             lineClamp: ['hover'],
