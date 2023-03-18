@@ -4,7 +4,7 @@
     "description": "Frontend Portofolio using HTML and TailwindCSS",
     "main": "index.html",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npx serve",
         "dev": "echo gass yuk 🚀 && tailwindcss -i ./src/main.css -o ./dist/final.css --watch",
         "build": "tailwindcss -i ./src/main.css -o ./dist/final.css --minify"
     },
@@ -16,6 +16,7 @@
     "author": "Gigih Paga",
     "license": "ISC",
     "devDependencies": {
+        "@tailwindcss/line-clamp": "^0.4.2",
         "autoprefixer": "^10.4.14",
         "postcss": "^8.4.21",
         "prettier": "^2.8.4",
