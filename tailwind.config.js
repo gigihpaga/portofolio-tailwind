@@ -16,7 +16,13 @@ module.exports = {
             screens: {
                 '2xl': '1320px',
             },
+            lineClamp: {
+                8: '8',
+            },
+        },
+        variants: {
+            lineClamp: ['hover'],
         },
     },
-    plugins: [],
+    plugins: [require('@tailwindcss/line-clamp')],
 };
