@@ -13,6 +13,9 @@ body {
     .btn-sosmed {
         @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white;
     }
+    .btn-sosmed--no-outline {
+        @apply w-9 h-9 mr-3 rounded-xl flex justify-center items-center text-slate-400 hover:text-white hover:border hover:border-solid hover:border-white;
+    }
 }
 
 .navbar--fixex {
